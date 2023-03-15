@@ -66,7 +66,7 @@ return (
           transition='.5s ease-out'
           opacity={isClicked ? 0.7 : 1}
           templateColumns="repeat(9, 1fr)"
-          gap={"4vh"}  >
+          gap={"1vh"} >
             <Image src="javascript.svg" minH="2vh" maxH={{base:"3vh", md:"5vh", xl:"6vh"}}/>
             <Image src="html.svg" minH="2vh" maxH={{base:"3vh", md:"5vh", xl:"6vh"}} />
             <Image src="css.svg" minH="2vh" maxH={{base:"3vh", md:"5vh", xl:"6vh"}}/>
