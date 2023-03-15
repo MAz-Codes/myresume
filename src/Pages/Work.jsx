@@ -70,7 +70,7 @@ return (
                     <Stack mt='6' spacing='3'>
                       <Heading fontFamily="Oswald-Regular" size='lg'>Fashion Webshop</Heading>
                       <Text fontSize="sm" py="1vh">
-                        This responsive SPA was created using React, styled with Chakra UI and built using Vite.js. I used react hooks such as "useState", "useContext" and "useNavigate" to track, update, redirect and distribute data throughout the app.
+                        This responsive SPA was created with React and styled with Chakra UI. I used react hooks such as "useState", "useContext" and "useNavigate" to track, update, redirect and distribute data throughout the app. The contact form features client-side validation.
                       </Text>
                       <Grid gap="1" templateColumns={"repeat(3, 1fr)"}>
                         <Tag px="1.5" size="sm" w="fit-content">#React JS</Tag>
@@ -108,7 +108,7 @@ return (
                     <Stack mt='6' spacing='3'>
                       <Heading fontFamily="Oswald-Regular" size='lg'>Self-Updating News Page</Heading>
                       <Text fontSize="sm" py="1vh">
-                        Using the NEWS API and the Axios library to fetch data, this simple website retrieves NBA related topics from the news and maps them out as cards you can click on and read more. (The Demo with the free API might not work. Look up the code at GitHub)
+                        Using the NEWS API and the Axios library to fetch data, this simple web app retrieves NBA related topics from the news and maps them out as cards that you can click on to read more. (The Demo with the free API might break. In that case find the code at GitHub)
                       </Text>
                       <Grid gap="1" templateColumns={"repeat(3, 1fr)"}>
                         <Tag px="1.5" size="sm" w="fit-content">#React JS</Tag>
