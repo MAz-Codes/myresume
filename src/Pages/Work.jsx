@@ -11,8 +11,8 @@ import Footbar from '../Elements/Footbar'
 
 import FotoMani from "/mani-music.com_.png"
 import FotoTara from "/tarawebshop.jpg"
-import FotoMisagh from "/misaghazimi.com.png"
-import FotoNba from "/nbanews.png"
+import FotoMisagh from "/misaghazimi.com.jpg"
+import FotoNba from "/nbanews.jpg"
 
 function Work() {
   const {isClicked, handleClick} = useContext(ThemeContext)
