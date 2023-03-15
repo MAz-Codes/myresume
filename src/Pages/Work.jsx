@@ -10,7 +10,7 @@ import Ghostbar from '../Elements/Ghostbar'
 import Footbar from '../Elements/Footbar'
 
 import FotoMani from "/mani-music.com_.png"
-import FotoTara from "/tarawebshop.png"
+import FotoTara from "/tarawebshop.jpg"
 import FotoMisagh from "/misaghazimi.com.png"
 import FotoNba from "/nbanews.png"
 
