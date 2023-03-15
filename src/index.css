@@ -57,21 +57,21 @@ button:focus-visible {
 
 @font-face {
   font-family: 'Montserrat';
-  src: url('fonts/Montserrat-Regular.ttf') format('truetype');
+  src: url('/fonts/Montserrat-Regular.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'MontserratBold';
-  src: url('fonts/Montserrat-Bold.ttf') format('truetype');
+  src: url('./fonts/Montserrat-Bold.ttf') format('truetype');
   font-weight: bold;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'Oswald-Regular';
-  src: url('fonts/Oswald-Regular.ttf') format('truetype');
+  src: url('public/fonts/Oswald-Regular.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
 }
