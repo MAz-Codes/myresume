@@ -55,6 +55,7 @@ function Home() {
                     md: "none",
                     xl: "none"}}>
                         <VStack
+                        pt={{base:"10vh", md:0}}
                         pl={{base:"0",sm:"1vw", md:"3vw",lg:"5vw", xl:"7vw", "2xl":"10vw"}}
                         whiteSpace="nowrap"
                         align={{base:"center", md:"start"}}
@@ -62,7 +63,7 @@ function Home() {
                             <Heading
                             as={motion.div}
                             transition='.5s ease-out'
-                            fontSize={{base: "md", md:"xl",lg:"2xl", xl:"5xl", "2xl":"6xl"}}
+                            fontSize={{base: "lg", md:"xl",lg:"2xl", xl:"5xl", "2xl":"6xl"}}
                             fontFamily="Oswald-Regular"
                             textAlign={"left"}>
                             MISAGH AZIMI
