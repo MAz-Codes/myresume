@@ -65,6 +65,7 @@ return (
           </VStack>
         </HStack>
         <Heading
+        textAlign="left"
         as={motion.div}
         transition='.5s ease-out'
         fontFamily={"Montserratbold"}
