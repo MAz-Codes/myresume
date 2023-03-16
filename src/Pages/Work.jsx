@@ -92,7 +92,7 @@ return (
                         GitHub
                       </Button>
                       <Button bg="rgba(255, 255, 255, 0.1)" _hover={{backgroundColor:"white", textColor:"black", borderColor:"transparent"}} _focus={{borderColor:"white", outlineColor:"transparent"}}
-                      onClick={()=> window.open("https://mazcoding.netlify.app/")}>
+                      onClick={()=> window.open("https://mazcodes.com")}>
                         Live Demo
                       </Button>
                     </Stack>
