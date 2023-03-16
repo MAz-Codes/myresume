@@ -80,7 +80,7 @@ return (
                         <Tag px="1.5" size="sm" w="fit-content">#JavaScript</Tag>
                         <Tag px="1.5" size="sm" w="fit-content">#CSS</Tag>
                         <Tag px="1.5" size="sm" w="fit-content">#Vite.JS</Tag>
-                        <Tag px="1.5" size="sm" w="fit-content">#FramerMotion</Tag>
+                        <Tag px="1.5" size="sm" w="fit-content">#Motion</Tag>
                       </Grid>
                     </Stack>
                   </CardBody>

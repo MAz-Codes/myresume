@@ -53,7 +53,7 @@ return (
             as={motion.div}
             transition='.5s ease-out'
             fontSize={{base:"xs", md:"sm",lg:"md", xl:"md"}}
-            >info@mazcoding.com</Text>
+            >info@mazcodes.com</Text>
           </VStack>
           <VStack>
             <FaPhoneSquare/>
