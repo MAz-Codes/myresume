@@ -1,5 +1,5 @@
 import React, {useContext} from 'react'
-import { Box, Stack, HStack, Flex, useBreakpointValue, Image, Button, ButtonGroup, CardBody,Card, Divider, CardFooter,Text, Heading, Tag, Badge, Grid } from '@chakra-ui/react'
+import { Box, Stack, VStack, HStack, Flex, useBreakpointValue, Image, Button, ButtonGroup, CardBody,Card, Divider, CardFooter,Text, Heading, Tag, Badge, Grid } from '@chakra-ui/react'
 import { motion} from "framer-motion"
 
 import { ThemeContext } from '../Elements/AnimatedRoutes';
@@ -10,6 +10,7 @@ import Ghostbar from '../Elements/Ghostbar'
 import Footbar from '../Elements/Footbar'
 
 import FotoMani from "/mani-music.com_.png"
+import FotoPortfolio from "/portfoliodark.jpg"
 import FotoTara from "/tarawebshop.jpg"
 import FotoMisagh from "/misaghazimi.com.jpg"
 import FotoNba from "/nbanews.jpg"
@@ -56,10 +57,48 @@ return (
             py="10"
             textColor={isClicked ? 'gray.400' : "white"}
             w="80vw">
-              <Grid 
-              gap="2vw"
-              templateColumns={{base: "repeat(1, 1fr)", sm:"repeat(1, 1fr)", md: "repeat(2, 1fr)",lg:"repeat(2, 1fr)",xl: "repeat(3, 1fr)"}}
+              <VStack gap="2vw">
+              <Grid
+              gap="5vw"
+              templateColumns={{base: "repeat(1, 1fr)", sm:"repeat(1, 1fr)", md: "repeat(2, 1fr)",lg:"repeat(2, 1fr)",xl: "repeat(2, 1fr)"}}
               justifyContent="center">
+                <Card maxW='sm' bg={isClicked? "rgba(255, 255, 255, 0.05)" : "transparent"} boxShadow="dark-lg" textColor="white">
+                  <CardBody>
+                    <Image
+                      src={FotoPortfolio}
+                      alt='Green double couch with wooden legs'
+                      borderRadius='sm'
+                    />
+                    <Stack mt='6' spacing='3'>
+                      <Heading fontFamily="Oswald-Regular" size='lg'>CV</Heading>
+                      <Text fontSize="sm" py="1vh">
+                        This static portfolio was made to showcase my current knowledge and skills of the front-end framework. This minimalistic site was created with React and Chakra UI and built with Vite.JS. The "dark mode" was created with the Context and the animations were made using the Framer Motion Library.
+                      </Text>
+                      <Grid gap="1" templateColumns={"repeat(3, 1fr)"}>
+                        <Tag px="1.5" size="sm" w="fit-content">#React JS</Tag>
+                        <Tag px="1.5" size="sm" w="fit-content">#ChakraUI</Tag>
+                        <Tag px="1.5" size="sm" w="fit-content">#JavaScript</Tag>
+                        <Tag px="1.5" size="sm" w="fit-content">#CSS</Tag>
+                        <Tag px="1.5" size="sm" w="fit-content">#Vite.JS</Tag>
+                        <Tag px="1.5" size="sm" w="fit-content">#FramerMotion</Tag>
+                      </Grid>
+                    </Stack>
+                  </CardBody>
+                  <Divider />
+                  <CardFooter justifyContent={"center"} alignItems="center">
+                    <Stack direction={"row"} spacing='2vw'>
+                      <Button bg="rgba(255, 255, 255, 0.1)" _hover={{backgroundColor:"white", textColor:"black", borderColor:"transparent"}} _focus={{borderColor:"white", outlineColor:"transparent"}}
+                      onClick={()=> window.open("https://github.com/maz-codes/myresume")}>
+                        GitHub
+                      </Button>
+                      <Button bg="rgba(255, 255, 255, 0.1)" _hover={{backgroundColor:"white", textColor:"black", borderColor:"transparent"}} _focus={{borderColor:"white", outlineColor:"transparent"}}
+                      onClick={()=> window.open("https://mazcoding.netlify.app/")}>
+                        Live Demo
+                      </Button>
+                    </Stack>
+                  </CardFooter>
+                </Card>
+
                 <Card  maxW='sm' bg={isClicked? "rgba(255, 255, 255, 0.05)" : "transparent"} boxShadow="dark-lg" textColor="white">
                   <CardBody>
                     <Image
@@ -87,17 +126,22 @@ return (
                   <CardFooter justifyContent={"center"} alignItems="center">
                     <Stack direction={"row"} spacing='2vw'>
                       <Button bg="rgba(255, 255, 255, 0.1)" _hover={{backgroundColor:"white", textColor:"black", borderColor:"transparent"}} _focus={{borderColor:"white", outlineColor:"transparent"}}
-                      onClick={()=> window.open("https://github.com/mazcoding/tarawebshop")}>
+                      onClick={()=> window.open("https://github.com/maz-codes/tarawebshop")}>
                         GitHub
                       </Button>
                       <Button bg="rgba(255, 255, 255, 0.1)" _hover={{backgroundColor:"white", textColor:"black", borderColor:"transparent"}} _focus={{borderColor:"white", outlineColor:"transparent"}}
-                      onClick={()=> window.open("https://mazcoding.github.io/tarawebshop/")}>
+                      onClick={()=> window.open("https://tarawebshop.netlify.app/")}>
                         Live Demo
                       </Button>
                     </Stack>
                   </CardFooter>
                 </Card>
 
+              </Grid>
+              <Grid
+              gap="5vw"
+              templateColumns={{base: "repeat(1, 1fr)", sm:"repeat(1, 1fr)", md: "repeat(2, 1fr)",lg:"repeat(2, 1fr)",xl: "repeat(2, 1fr)"}}
+              justifyContent="center">
                 <Card maxW='sm' bg={isClicked? "rgba(255, 255, 255, 0.05)" : "transparent"} boxShadow="dark-lg" textColor="white">
                   <CardBody>
                     <Image
@@ -124,17 +168,16 @@ return (
                   <CardFooter justifyContent={"center"} alignItems="center">
                     <Stack direction={"row"} spacing='2vw'>
                       <Button bg="rgba(255, 255, 255, 0.1)" _hover={{backgroundColor:"white", textColor:"black", borderColor:"transparent"}} _focus={{borderColor:"white", outlineColor:"transparent"}}
-                      onClick={()=> window.open("https://github.com/mazcoding/nbanews")}>
+                      onClick={()=> window.open("https://github.com/maz-codes/nbanews")}>
                         GitHub
                       </Button>
                       <Button bg="rgba(255, 255, 255, 0.1)" _hover={{backgroundColor:"white", textColor:"black", borderColor:"transparent"}} _focus={{borderColor:"white", outlineColor:"transparent"}}
-                      onClick={()=> window.open("https://mazcoding.github.io/nbanews/")}>
+                      onClick={()=> window.open("https://nbanewsapi.netlify.app/")}>
                         Live Demo
                       </Button>
                     </Stack>
                   </CardFooter>
                 </Card>
-
                 <Card maxW='sm' bg={isClicked? "rgba(255, 255, 255, 0.05)" : "transparent"} boxShadow="dark-lg" textColor="white">
                   <CardBody>
                     <Image
@@ -145,7 +188,7 @@ return (
                     <Stack mt='6' spacing='3'>
                       <Heading fontFamily="Oswald-Regular" size='lg'>Artistic Portfolio</Heading>
                       <Text fontSize="sm" py="1vh">
-                        This portfolio site was made using WordPress with spicific funcionality in mind: show dates, music albums, video players etc. The layout is based on a theme off Envato Market and changed using WP Bakery, Elementor and CSS to bring a creative touch to the site.
+                        This portfolio site was made using WordPress with spicific funcionality in mind: show dates, music albums, video players etc. The layout is based on a theme off of Envato Market and changed using WP Bakery, Elementor and CSS to bring a creative touch to the site.
                       </Text>
                       <Grid gap="1" templateColumns={"repeat(3, 1fr)"}>
                       <Tag size="sm" w="fit-content">#CMS</Tag>
@@ -164,7 +207,8 @@ return (
                       </Button>
                   </CardFooter>
                 </Card>
-                </Grid>
+              </Grid>
+              </VStack>
             </Box>
             <Ghostbar />
           </Flex>

@@ -54,12 +54,12 @@ return (
         gap={10}
         fontSize={{base:"xs", sm:"sm", md: "md", lg:"md", xl:"lg"}}>
           <Text lineHeight={1.5} textAlign="left">
-          I love bringing ideas to life through technology and creativity. I feel fortunate to have found a field that allows me to combine my interests with my professional work, and I'm grateful for the opportunity to share my passion with others.<br/>
+          I love bringing ideas to life through technology and creativity. I feel fortunate to have found a field that allows me to combine my interests with my professional work.<br/>
           <br />
 
-          I create responsive and modern websites using frameworks like React and Chakra UI. With a background in audio-visual media and the arts, I have a lot of confidence in my aesthetics and my vision for projects.<br/><br/>
+          I create responsive and modern web apps using frameworks like React and Chakra UI. With a Master's degree in the arts specifically audio-visual media, I have a lot of confidence in my aesthetics and my vision for projects.<br/><br/>
 
-          After building simple WordPress websites for almost 5 years, I recently decided to take my skills to the next level by learning the front-end languages and a range of tools and frameworks such as:</Text>
+          After building theme-based WordPress websites for almost 5 years, I recently decided to take my skills to the next level by educationg myself in front-end languages and a range of tools and frameworks such as:</Text>
 
           <Grid
           as={motion.div}

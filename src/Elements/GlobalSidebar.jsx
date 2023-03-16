@@ -50,7 +50,7 @@ function GlobalSidebar() {
       </Box>
       <Box >
         <Link
-        onClick={() => window.open("https://github.com/mazcoding", '_blank')}
+        onClick={() => window.open("https://github.com/maz-codes", '_blank')}
         as={motion.div}
         whileHover={{ scale: 1.3 }}
         whileTap={{ scale: 0.9 }}

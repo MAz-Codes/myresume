@@ -33,7 +33,7 @@ function Footbar() {
           _hover={{color:"gray.900"}}>
             <FaLinkedin size={"4vw"}/>
           </Box>
-          <Box onClick={() => window.open("https://github.com/mazcoding", '_blank')}
+          <Box onClick={() => window.open("https://github.com/maz-codes", '_blank')}
           as={motion.div}
           whileHover={{ scale: 1.3 }}
           whileTap={{ scale: 0.9 }}
