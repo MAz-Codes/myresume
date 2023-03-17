@@ -89,7 +89,7 @@ return (
                     <Stack direction={"row"} spacing='2vw'>
                       <Button bg="rgba(255, 255, 255, 0.1)" _hover={{backgroundColor:"white", textColor:"black", borderColor:"transparent"}} _focus={{borderColor:"white", outlineColor:"transparent"}}
                       onClick={()=> window.open("https://github.com/maz-codes/myresume")}>
-                        GitHub
+                        {("</>")} Code
                       </Button>
                       <Button bg="rgba(255, 255, 255, 0.1)" _hover={{backgroundColor:"white", textColor:"black", borderColor:"transparent"}} _focus={{borderColor:"white", outlineColor:"transparent"}}
                       onClick={()=> window.open("https://mazcodes.com")}>
@@ -127,7 +127,7 @@ return (
                     <Stack direction={"row"} spacing='2vw'>
                       <Button bg="rgba(255, 255, 255, 0.1)" _hover={{backgroundColor:"white", textColor:"black", borderColor:"transparent"}} _focus={{borderColor:"white", outlineColor:"transparent"}}
                       onClick={()=> window.open("https://github.com/maz-codes/tarawebshop")}>
-                        GitHub
+                        {("</>")} Code
                       </Button>
                       <Button bg="rgba(255, 255, 255, 0.1)" _hover={{backgroundColor:"white", textColor:"black", borderColor:"transparent"}} _focus={{borderColor:"white", outlineColor:"transparent"}}
                       onClick={()=> window.open("https://tarawebshop.netlify.app/")}>
@@ -169,7 +169,7 @@ return (
                     <Stack direction={"row"} spacing='2vw'>
                       <Button bg="rgba(255, 255, 255, 0.1)" _hover={{backgroundColor:"white", textColor:"black", borderColor:"transparent"}} _focus={{borderColor:"white", outlineColor:"transparent"}}
                       onClick={()=> window.open("https://github.com/maz-codes/nbanews")}>
-                        GitHub
+                        {("</>")} Code
                       </Button>
                       <Button bg="rgba(255, 255, 255, 0.1)" _hover={{backgroundColor:"white", textColor:"black", borderColor:"transparent"}} _focus={{borderColor:"white", outlineColor:"transparent"}}
                       onClick={()=> window.open("https://nbanewsapi.netlify.app/")}>
