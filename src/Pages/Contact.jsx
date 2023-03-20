@@ -49,19 +49,27 @@ return (
         pb="20vh">
           <VStack>
             <FaEnvelope/>
-            <Text
-            as={motion.div}
-            transition='.5s ease-out'
-            fontSize={{base:"xs", md:"sm",lg:"md", xl:"md"}}
-            >info@mazcodes.com</Text>
+            <a href="mailto:info@mazcodes.com">
+              <Text
+              as={motion.div}
+              transition='.5s ease-out'
+              _hover={{textColor:"gray.700", transform: "scale(1.1)"}}
+              fontSize={{base:"xs", md:"sm",lg:"md", xl:"md"}}
+                >info@mazcodes.com
+              </Text>
+            </a>
           </VStack>
           <VStack>
             <FaPhoneSquare/>
-            <Text
-            as={motion.div}
-            transition='.5s ease-out'
-            fontSize={{base:"xs", md:"sm",lg:"md", xl:"md"}}
-            >+49 (0) 201 28811041</Text>
+            <a href="tel:+49020128811041">
+              <Text
+              as={motion.div}
+              transition='.5s ease-out'
+              _hover={{textColor:"gray.700", transform: "scale(1.1)"}}
+              fontSize={{base:"xs", md:"sm",lg:"md", xl:"md"}}
+                >+49 (0) 201 28811041
+              </Text>
+            </a>
           </VStack>
         </HStack>
         <Heading
