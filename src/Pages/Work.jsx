@@ -14,6 +14,7 @@ import FotoPortfolio from "/portfoliodark.jpg"
 import FotoTara from "/tarawebshop.jpg"
 import FotoMisagh from "/misaghazimi.com.jpg"
 import FotoNba from "/nbanews.jpg"
+import FotoQuiz from "/audioquiz.jpg"
 
 function Work() {
   const {isClicked, handleClick} = useContext(ThemeContext)
@@ -178,6 +179,43 @@ return (
                     </Stack>
                   </CardFooter>
                 </Card>
+
+                <Card maxW='sm' bg={isClicked? "rgba(255, 255, 255, 0.05)" : "transparent"} boxShadow="dark-lg" textColor="white">
+                  <CardBody>
+                    <Image
+                      src={FotoQuiz}
+                      alt='Green double couch with wooden legs'
+                      borderRadius='sm'
+                    />
+                    <Stack mt='6' spacing='3'>
+                      <Heading fontFamily="Oswald-Regular" size='lg'>Quiz Game</Heading>
+                      <Text fontSize="sm" py="1vh">
+                        Using the NEWS API and the Axios library to fetch data, this simple web app retrieves NBA related topics from the news and maps them out as cards that you can click on to read more. (The Demo with the free API might break. In that case find the code at GitHub)
+                      </Text>
+                      <Grid gap="1" templateColumns={"repeat(3, 1fr)"}>
+                        <Tag px="1.5" size="sm" w="fit-content">#React JS</Tag>
+                        <Tag px="1.5" size="sm" w="fit-content">#Material UI</Tag>
+                        <Tag px="1.5" size="sm" w="fit-content">#JavaScript</Tag>
+                        <Tag px="1.5" size="sm" w="fit-content">#CSS</Tag>
+                        <Tag px="1.5" size="sm" w="fit-content">#Vite.JS</Tag>
+                      </Grid>
+                    </Stack>
+                  </CardBody>
+                  <Divider />
+                  <CardFooter justifyContent={"center"} alignItems="center">
+                    <Stack direction={"row"} spacing='2vw'>
+                      <Button bg="rgba(255, 255, 255, 0.1)" _hover={{backgroundColor:"white", textColor:"black", borderColor:"transparent"}} _focus={{borderColor:"white", outlineColor:"transparent"}}
+                      onClick={()=> window.open("https://github.com/maz-codes/nbanews")}>
+                        {("</>")} Code
+                      </Button>
+                      <Button bg="rgba(255, 255, 255, 0.1)" _hover={{backgroundColor:"white", textColor:"black", borderColor:"transparent"}} _focus={{borderColor:"white", outlineColor:"transparent"}}
+                      onClick={()=> window.open("https://nbanewsapi.netlify.app/")}>
+                        Live Demo
+                      </Button>
+                    </Stack>
+                  </CardFooter>
+                </Card>
+
                 <Card maxW='sm' bg={isClicked? "rgba(255, 255, 255, 0.05)" : "transparent"} boxShadow="dark-lg" textColor="white">
                   <CardBody>
                     <Image
