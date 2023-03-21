@@ -65,12 +65,13 @@ return (
           as={motion.div}
           transition='.5s ease-out'
           opacity={isClicked ? 0.7 : 1}
-          templateColumns="repeat(9, 1fr)"
+          templateColumns="repeat(10, 1fr)"
           gap={"1vh"} >
             <Image src="javascript.svg" minH="2vh" maxH={{base:"3vh", md:"5vh", xl:"6vh"}}/>
             <Image src="html.svg" minH="2vh" maxH={{base:"3vh", md:"5vh", xl:"6vh"}} />
             <Image src="css.svg" minH="2vh" maxH={{base:"3vh", md:"5vh", xl:"6vh"}}/>
             <Image src="react.svg" minH="2vh" maxH={{base:"3vh", md:"5vh", xl:"6vh"}}/>
+            <Image src="material-ui-1.svg" minH="2vh" maxH={{base:"3vh", md:"5vh", xl:"6vh"}} />
             <Image src="logomark-colored.svg" minH="2vh" maxH={{base:"3vh", md:"5vh", xl:"6vh"}} />
             <Image src="node.svg" minH="2vh" maxH={{base:"3vh", md:"5vh", xl:"6vh"}}/>
             <Image src="Vite.svg" minH="2vh" maxH={{base:"3vh", md:"5vh", xl:"6vh"}}/>
