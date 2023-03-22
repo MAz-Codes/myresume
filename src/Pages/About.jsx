@@ -46,7 +46,7 @@ return (
       py="10"
       mb="10vh"
       textColor={isClicked ? 'gray.500' : "white"}
-      w="60%"
+      w={{base: "80%", md: "60%" }}
       maxW="900px"
       justify={"center"}>
         <VStack
