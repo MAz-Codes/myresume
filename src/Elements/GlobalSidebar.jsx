@@ -14,7 +14,7 @@ function GlobalSidebar() {
     <Flex
     as={motion.div}
     whileHover={{ opacity:1, transition: {duration: .4} }}
-    direction="column"
+    direction="column-reverse"
     gap="7vh"
     justifyContent="center"
     alignItems="center"

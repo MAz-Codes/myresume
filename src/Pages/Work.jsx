@@ -63,7 +63,7 @@ return (
               gap="5vw"
               templateColumns={{base: "repeat(1, 1fr)", sm:"repeat(1, 1fr)", md: "repeat(2, 1fr)",lg:"repeat(2, 1fr)",xl: "repeat(2, 1fr)"}}
               justifyContent="center">
-                <Card maxW='sm' bg={isClicked? "rgba(255, 255, 255, 0.05)" : "transparent"} boxShadow="dark-lg" textColor="white">
+                <Card maxW='md' bg={isClicked? "rgba(255, 255, 255, 0.05)" : "transparent"} boxShadow="dark-lg" textColor="white">
                   <CardBody>
                     <Image
                       src={FotoPortfolio}
@@ -73,7 +73,7 @@ return (
                     <Stack mt='6' spacing='3'>
                       <Heading fontFamily="Oswald-Regular" size='lg'>CV</Heading>
                       <Text fontSize="sm" py="1vh">
-                        This static portfolio was made to showcase my current knowledge and skills of the front-end framework. This minimalistic site was created with React and Chakra UI and built with Vite.JS. The "dark mode" was created with the Context and the animations were made using the Framer Motion Library.
+                        My portfolio was made to showcase my current knowledge and skills of the front-end framework. This minimalistic site was created with React and Chakra UI and built with Vite.JS. The "dark mode" was created with Context and the animations were made using the Framer Motion Library.
                       </Text>
                       <Grid gap="1" templateColumns={"repeat(3, 1fr)"}>
                         <Tag px="1.5" size="sm" w="fit-content">#React JS</Tag>
@@ -100,7 +100,7 @@ return (
                   </CardFooter>
                 </Card>
 
-                <Card  maxW='sm' bg={isClicked? "rgba(255, 255, 255, 0.05)" : "transparent"} boxShadow="dark-lg" textColor="white">
+                <Card  maxW='md' bg={isClicked? "rgba(255, 255, 255, 0.05)" : "transparent"} boxShadow="dark-lg" textColor="white">
                   <CardBody>
                     <Image
                       src={FotoTara}
@@ -137,13 +137,51 @@ return (
                     </Stack>
                   </CardFooter>
                 </Card>
-
               </Grid>
+
+
               <Grid
               gap="5vw"
               templateColumns={{base: "repeat(1, 1fr)", sm:"repeat(1, 1fr)", md: "repeat(2, 1fr)",lg:"repeat(2, 1fr)",xl: "repeat(2, 1fr)"}}
               justifyContent="center">
-                <Card maxW='sm' bg={isClicked? "rgba(255, 255, 255, 0.05)" : "transparent"} boxShadow="dark-lg" textColor="white">
+
+                <Card maxW='md' bg={isClicked? "rgba(255, 255, 255, 0.05)" : "transparent"} boxShadow="dark-lg" textColor="white">
+                  <CardBody>
+                    <Image
+                      src={FotoQuiz}
+                      alt='Green double couch with wooden legs'
+                      borderRadius='sm'
+                    />
+                    <Stack mt='6' spacing='3'>
+                      <Heading fontFamily="Oswald-Regular" size='lg'>Quiz Game</Heading>
+                      <Text fontSize="sm" py="1vh">
+                      The focus of the project was the logic. To make this quiz game in React, I used the State Hook for tracking the state of the answers and to update the question and the result. The layout was styled using Material UI and the subtle animation is using the Framer Motion library.
+                      </Text>
+                      <Grid gap="1" templateColumns={"repeat(3, 1fr)"}>
+                        <Tag px="1.5" size="sm" w="fit-content">#React JS</Tag>
+                        <Tag px="1.5" size="sm" w="fit-content">#Material UI</Tag>
+                        <Tag px="1.5" size="sm" w="fit-content">#JavaScript</Tag>
+                        <Tag px="1.5" size="sm" w="fit-content">#Vite.JS</Tag>
+                        <Tag px="1.5" size="sm" w="fit-content">#Motion</Tag>
+                      </Grid>
+                    </Stack>
+                  </CardBody>
+                  <Divider />
+                  <CardFooter justifyContent={"center"} alignItems="center">
+                    <Stack direction={"row"} spacing='2vw'>
+                      <Button bg="rgba(255, 255, 255, 0.1)" _hover={{backgroundColor:"white", textColor:"black", borderColor:"transparent"}} _focus={{borderColor:"white", outlineColor:"transparent"}}
+                      onClick={()=> window.open("https://github.com/MAz-Codes/audioquiz")}>
+                        {("</>")} Code
+                      </Button>
+                      <Button bg="rgba(255, 255, 255, 0.1)" _hover={{backgroundColor:"white", textColor:"black", borderColor:"transparent"}} _focus={{borderColor:"white", outlineColor:"transparent"}}
+                      onClick={()=> window.open("https://audioquiz.netlify.app/")}>
+                        Live Demo
+                      </Button>
+                    </Stack>
+                  </CardFooter>
+                </Card>
+
+                <Card maxW='md' bg={isClicked? "rgba(255, 255, 255, 0.05)" : "transparent"} boxShadow="dark-lg" textColor="white">
                   <CardBody>
                     <Image
                       src={FotoNba}
@@ -180,43 +218,7 @@ return (
                   </CardFooter>
                 </Card>
 
-                <Card maxW='sm' bg={isClicked? "rgba(255, 255, 255, 0.05)" : "transparent"} boxShadow="dark-lg" textColor="white">
-                  <CardBody>
-                    <Image
-                      src={FotoQuiz}
-                      alt='Green double couch with wooden legs'
-                      borderRadius='sm'
-                    />
-                    <Stack mt='6' spacing='3'>
-                      <Heading fontFamily="Oswald-Regular" size='lg'>Quiz Game</Heading>
-                      <Text fontSize="sm" py="1vh">
-                        Using the NEWS API and the Axios library to fetch data, this simple web app retrieves NBA related topics from the news and maps them out as cards that you can click on to read more. (The Demo with the free API might break. In that case find the code at GitHub)
-                      </Text>
-                      <Grid gap="1" templateColumns={"repeat(3, 1fr)"}>
-                        <Tag px="1.5" size="sm" w="fit-content">#React JS</Tag>
-                        <Tag px="1.5" size="sm" w="fit-content">#Material UI</Tag>
-                        <Tag px="1.5" size="sm" w="fit-content">#JavaScript</Tag>
-                        <Tag px="1.5" size="sm" w="fit-content">#CSS</Tag>
-                        <Tag px="1.5" size="sm" w="fit-content">#Vite.JS</Tag>
-                      </Grid>
-                    </Stack>
-                  </CardBody>
-                  <Divider />
-                  <CardFooter justifyContent={"center"} alignItems="center">
-                    <Stack direction={"row"} spacing='2vw'>
-                      <Button bg="rgba(255, 255, 255, 0.1)" _hover={{backgroundColor:"white", textColor:"black", borderColor:"transparent"}} _focus={{borderColor:"white", outlineColor:"transparent"}}
-                      onClick={()=> window.open("https://github.com/maz-codes/nbanews")}>
-                        {("</>")} Code
-                      </Button>
-                      <Button bg="rgba(255, 255, 255, 0.1)" _hover={{backgroundColor:"white", textColor:"black", borderColor:"transparent"}} _focus={{borderColor:"white", outlineColor:"transparent"}}
-                      onClick={()=> window.open("https://nbanewsapi.netlify.app/")}>
-                        Live Demo
-                      </Button>
-                    </Stack>
-                  </CardFooter>
-                </Card>
-
-                <Card maxW='sm' bg={isClicked? "rgba(255, 255, 255, 0.05)" : "transparent"} boxShadow="dark-lg" textColor="white">
+                <Card maxW='md' bg={isClicked? "rgba(255, 255, 255, 0.05)" : "transparent"} boxShadow="dark-lg" textColor="white">
                   <CardBody>
                     <Image
                       src={FotoMisagh}
