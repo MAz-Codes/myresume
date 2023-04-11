@@ -1,5 +1,5 @@
 import React, {useContext} from 'react'
-import { Grid, Box, VStack, Text, Flex, useBreakpointValue, Image } from '@chakra-ui/react'
+import { Grid, Box, VStack, Text, Flex, useBreakpointValue, Image, Link } from '@chakra-ui/react'
 import { useNavigate } from 'react-router-dom'
 import { motion} from "framer-motion"
 
@@ -58,7 +58,7 @@ return (
           I love bringing ideas to life through technology and creativity. I feel fortunate to have found a field that allows me to combine my interests with my professional work.<br/>
           <br />
 
-          I create responsive and modern web apps using frameworks like React, JavaScript, Chakra UI and Material UI. With a Master's degree in the arts, specifically audio-visual media, I have a lot of confidence in my aesthetics and my vision for projects.<br/><br/>
+          I create responsive and modern web apps using React, JavaScript, TypeScript and many frameworks and libraries. With a Master's degree in the arts, specifically audio-visual media, I have a lot of confidence in my aesthetics and my vision for projects.<br/><br/>
 
           After building theme-based WordPress websites for almost 5 years, I recently decided to take my skills to the next level by educationg myself in the front-end stacks and a range of tools and frameworks such as:</Text>
 
@@ -66,11 +66,12 @@ return (
           as={motion.div}
           transition='.5s ease-out'
           opacity={isClicked ? 0.7 : 1}
-          templateColumns="repeat(10, 1fr)"
+          templateColumns="repeat(11, 1fr)"
           gap={"1vh"} >
             <Image src="javascript.svg" minH="2vh" maxH={{base:"3vh", md:"5vh", xl:"6vh"}}/>
             <Image src="html.svg" minH="2vh" maxH={{base:"3vh", md:"5vh", xl:"6vh"}} />
             <Image src="css.svg" minH="2vh" maxH={{base:"3vh", md:"5vh", xl:"6vh"}}/>
+            <Image src="typescript.svg" minH="2vh" maxH={{base:"3vh", md:"5vh", xl:"6vh"}}/>
             <Image src="react.svg" minH="2vh" maxH={{base:"3vh", md:"5vh", xl:"6vh"}}/>
             <Image src="material-ui-1.svg" minH="2vh" maxH={{base:"3vh", md:"5vh", xl:"6vh"}} />
             <Image src="logomark-colored.svg" minH="2vh" maxH={{base:"3vh", md:"5vh", xl:"6vh"}} />
@@ -79,7 +80,10 @@ return (
             <Image src="figma.svg" minH="2vh" maxH={{base:"3vh", md:"5vh", xl:"6vh"}} />
             <Image src="github.svg" minH="2h" maxH={{base:"3vh", md:"5vh", xl:"6vh"}}/>
           </Grid>
-          <Text textAlign="left">I hold the Front-End Developer Professional Certificate from "Meta" (formally known as Facebook).<br/><br/>
+          <Text textAlign="left">I hold the 
+            <Link color='teal.200' href='https://www.coursera.org/professional-certificates/meta-front-end-developer?' isExternal _hover={{color:"gray.600"}}
+            > Front-End Developer Professional Certificate
+            </Link> from "Meta" (formally known as Facebook).<br/><br/>
           As a developer and a creator, I'm always looking for new challenges and inspirations to create awesome web apps. I'm excited to take on new projects and deliver high-quality work that not only meets but exceeds expectations.</Text>
         </VStack>
       </Box>
