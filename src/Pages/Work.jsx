@@ -12,7 +12,7 @@ import Footbar from '../Elements/Footbar'
 import FotoMani from "/mani-music.com_.png"
 import FotoPortfolio from "/portfoliodark.jpg"
 import FotoTara from "/tarawebshop.jpg"
-import FotoMisagh from "/misaghazimi.com.jpg"
+import FotoMisagh from "/misaghazimi.png"
 import FotoNba from "/nbanews.jpg"
 import FotoQuiz from "/audioquiz.jpg"
 
@@ -228,23 +228,29 @@ return (
                     <Stack mt='6' spacing='3'>
                       <Heading fontFamily="Oswald-Regular" size='lg'>Artistic Portfolio</Heading>
                       <Text fontSize="sm" py="1vh">
-                        This portfolio site was made using WordPress with spicific funcionality in mind: show dates, music albums, video players etc. The layout is based on a theme off of Envato Market and changed using WP Bakery, Elementor and CSS to bring a creative touch to the site.
+                        My main portfolio was made with my diverse works and interests in mind. This state of the art website was designed and made by me using React.
                       </Text>
                       <Grid gap="1" templateColumns={"repeat(3, 1fr)"}>
-                      <Tag size="sm" w="fit-content">#CMS</Tag>
-                        <Tag px="1.5" size="sm" w="fit-content">#WordPress</Tag>
-                        <Tag px="1.5" size="sm" w="fit-content">#Elementor</Tag>
-                        <Tag px="1.5" size="sm" w="fit-content">#WPBakery</Tag>
-                        <Tag px="1.5" size="sm" w="fit-content">#CSS</Tag>
+                      <Tag size="sm" w="fit-content">#React JS</Tag>
+                        <Tag px="1.5" size="sm" w="fit-content">#Vite.JS</Tag>
+                        <Tag px="1.5" size="sm" w="fit-content">#Chakra UI</Tag>
+                        <Tag px="1.5" size="sm" w="fit-content">#FontAwesome</Tag>
+                        <Tag px="1.5" size="sm" w="fit-content">#Vanilla CSS</Tag>
                       </Grid>
                     </Stack>
                   </CardBody>
                   <Divider />
                   <CardFooter justifyContent={"center"} alignItems="center">
+                  <Stack direction={"row"} spacing='2vw'>
+                      <Button bg="rgba(255, 255, 255, 0.1)" _hover={{backgroundColor:"white", textColor:"black", borderColor:"transparent"}} _focus={{borderColor:"white", outlineColor:"transparent"}}
+                      onClick={()=> window.open("https://github.com/MAz-Codes/particleReactWebApp")}>
+                        {("</>")} Code
+                      </Button>
                       <Button bg="rgba(255, 255, 255, 0.1)" _hover={{backgroundColor:"white", textColor:"black", borderColor:"transparent"}} _focus={{borderColor:"white", outlineColor:"transparent"}}
                       onClick={()=> window.open("https://misaghazimi.com")}>
                         Live Demo
                       </Button>
+                      </Stack>
                   </CardFooter>
                 </Card>
               </Grid>
