@@ -77,7 +77,7 @@ return (
             <Image src="logomark-colored.svg" minH="2vh" maxH={{base:"3vh", md:"5vh", xl:"6vh"}} />
             <Image src="node.svg" minH="2vh" maxH={{base:"3vh", md:"5vh", xl:"6vh"}}/>
             <Image src="Vite.svg" minH="2vh" maxH={{base:"3vh", md:"5vh", xl:"6vh"}}/>
-            <Image src="figma.svg" minH="2vh" maxH={{base:"3vh", md:"5vh", xl:"6vh"}} />
+            <Image src="figma.svg" minH="2h" maxH={{base:"3vh", md:"5vh", xl:"6vh"}}/>
             <Image src="github.svg" minH="2h" maxH={{base:"3vh", md:"5vh", xl:"6vh"}}/>
           </Grid>
           <Text textAlign="left">I hold the 
